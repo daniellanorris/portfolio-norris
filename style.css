@@ -1,0 +1,107 @@
+.h1 {
+    font-family: "Mulish-VariableFont_wght.ttf";
+}
+
+.logo {
+    border-radius: 50px;
+    padding: 20px;
+}
+
+
+body {
+    text-align: center;
+    background-color: black;
+  }
+  
+  .tv {
+    width: 400px;
+    height: 200px;
+    border: 6px solid black;
+    margin: 0 auto;
+    overflow: hidden;
+    position: relative;
+    border-radius: 400px;
+  }
+  
+
+.index-grid {
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: auto;
+    grid-template-areas: 
+    "";
+
+}
+  
+  /******************************/
+  
+  .tv0 {
+    width: 400px;
+    height: 200px;
+    border: none;
+    margin: 0 auto;
+    overflow: hidden;
+    position: relative;
+    border-radius: 45px;
+  }
+  
+  .tv-static0 {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    margin: auto;
+    height: 300%;
+    width: 300%;
+    animation: anim 1s steps(2, end) infinite both;
+    transform: translate3d(0, 0, 0);
+    filter: contrast(300%) brightness(50%);
+  }
+  
+  .tv-static0 svg {
+    height: 200%;
+    width: 100%;
+    transform: scale(2.5);
+  }
+
+  
+  @keyframes anim {
+    0% {
+      transform: translateX(0px, 0px);
+    }
+    10% {
+      transform: translate(-100px, 100px);
+    }
+    20% {
+      transform: translate(150px, -100px);
+    }
+    30% {
+      transform: translate(-100px, 100px);
+    }
+    40% {
+      transform: translate(100px, -150px);
+    }
+    50% {
+      transform: translate(-100px, 200px);
+    }
+    60% {
+      transform: translate(-200px, -100px);
+    }
+    70% {
+      transform: translateY(50px, 100px);
+    }
+    80% {
+      transform: translate(100px, -150px);
+    }
+    90% {
+      transform: translate(0px, 200px);
+    }
+    100% {
+      transform: translate(-100px, 100px);
+    }
+  }
+ 
+/*****************/
+
+.nav-item {
+    color: white;
+    font-feature-settings: "hlig";
+}
