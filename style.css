@@ -1,3 +1,9 @@
+@font-face {
+    font-family:"Mulish";
+    src: url("Mulish-Black.ttf");
+}
+
+
 .h1 {
     font-family: "Mulish-VariableFont_wght.ttf";
 }
@@ -103,5 +109,8 @@ body {
 
 .nav-item {
     color: white;
-    font-feature-settings: "hlig";
+    text-decoration: none;
+    font-size: 2rem;
+    font-family: "Mulish";
 }
+
