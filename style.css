@@ -12,8 +12,9 @@
 
 
 .h1 {
-    font-family: "Mulish-VariableFont_wght.ttf";
+    font-family: "Mulish";
     font-style: white;
+    z-index: 2;
 }
 
 .logo {
@@ -32,6 +33,7 @@
     grid-template-rows: auto;
     grid-template-areas:
     "tv1 tv2 tv3" ;
+    z-index: 1;
 }
 
 @media screen and (max-width: 1250px) {
@@ -42,6 +44,7 @@
     grid-template-areas: 
     "tv1 tv2"
     "tv3 tv3";
+    z-index: 1;
   }
 }
   
@@ -55,6 +58,7 @@
     overflow: hidden;
     position: relative;
     border-radius: 45px;
+    z-index: 1;
   }
   
   .tv-static0 {
@@ -67,12 +71,14 @@
     animation: anim 1s steps(2, end) infinite both;
     transform: translate3d(0, 0, 0);
     filter: contrast(300%) brightness(50%);
+    z-index: 1;
   }
   
   .tv-static0 svg {
     height: 200%;
     width: 100%;
     transform: scale(2.5);
+    z-index: 1;
   }
 
   
