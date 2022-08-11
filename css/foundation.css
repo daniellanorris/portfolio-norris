@@ -20,8 +20,9 @@ body {
   margin: 0; }
 
 h1 {
-  font-size: 2em;
-  margin: 0.67em 0; }
+  font-size: 3em;
+  margin: 0.67em 0;
+  font-style: white; }
 
 hr {
   -webkit-box-sizing: content-box;
@@ -2221,7 +2222,7 @@ h6, .h6 {
     color: #cacaca; }
 
 h1, .h1 {
-  font-size: 1.5rem;
+  font-size: 3rem;
   line-height: 1.4;
   margin-top: 0;
   margin-bottom: 0.5rem; }
