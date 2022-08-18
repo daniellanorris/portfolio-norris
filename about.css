@@ -1,0 +1,49 @@
+.about-the-author {
+  background-color: black;
+  padding: 1rem;
+  border: 1px solid gray;
+}
+.about-the-author .separator-left {
+  text-align: left;
+}
+.about-the-author .separator-left::after {
+  position: relative;
+  width: 5rem;
+  border-bottom: solid black;
+  margin: 0.3rem auto 0;
+  margin-left: 0;
+}
+.about-the-author .author-title {
+  text-transform: uppercase;
+}
+.about-the-author .author-social {
+  text-align: center;
+  margin-top: 0.7rem;
+  margin-bottom: 0.7rem;
+}
+.about-the-author .author-social .fa-stack {
+  display: inline-block;
+}
+.about-the-author .author-social .fa-stack.facebook {
+  color: white;
+}
+.about-the-author .author-social .fa-stack.facebook:hover, .about-the-author .author-social .fa-stack.facebook:focus {
+  color: white;
+}
+.about-the-author .author-social .fa-stack.twitter {
+  color: white;
+}
+.about-the-author .author-social .fa-stack.twitter:hover, .about-the-author .author-social .fa-stack.twitter:focus {
+  color: white;
+}
+.about-the-author .author-social .fa-stack.linkedin {
+  color: white;
+}
+.about-the-author .author-social .fa-stack.linkedin:hover, .about-the-author .author-social .fa-stack.linkedin:focus {
+  color: white;
+}
+.about-the-author .author-image {
+  border: 1px solid gray;
+}
+
+/*# sourceMappingURL=about.css.map */

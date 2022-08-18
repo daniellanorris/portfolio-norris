@@ -1,24 +1,25 @@
-// Source: https://designpieces.com/2012/12/social-media-colours-hex-and-rgb/
-$social-brand-facebook: #3b5998;
-$social-brand-twitter: #55acee;
-$social-brand-linkedin: #007bb5;
+//Source: https://designpieces.com/2012/12/social-media-colours-hex-and-rgb//
+$social-brand-facebook: white;
+$social-brand-twitter: white;
+$social-brand-linkedin: white;
 $about-the-author-text-transform: uppercase;
 $about-the-author-separator-width: 5rem;
 $about-the-author-separator-thickness: 0.125rem;
+$primary-color: black;
+$gray: gray;
 
 .about-the-author {
-  background-color: $white;
+  background-color: black;
   padding: 1rem;
-  border: 1px solid $medium-gray;
+  border: 1px solid gray;
 
   .separator-left {
     text-align: left;
-    @include clearfix;
 
     &::after {
       position: relative;
       width: $about-the-author-separator-width;
-      border-bottom: $about-the-author-separator-thickness solid $primary-color;
+      border-bottom: solid $primary-color;
       margin: 0.3rem auto 0;
       margin-left: 0;
     }
@@ -32,7 +33,7 @@ $about-the-author-separator-thickness: 0.125rem;
     text-align: center;
     margin-top: 0.7rem;
     margin-bottom: 0.7rem;
-
+    
     .fa-stack {
       display: inline-block;
 
@@ -66,6 +67,6 @@ $about-the-author-separator-thickness: 0.125rem;
   }
 
   .author-image {
-    border: 1px solid $medium-gray;
+    border: 1px solid $gray;
   }
 }
