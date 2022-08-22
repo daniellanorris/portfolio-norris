@@ -1,13 +1,17 @@
-.index-body {
+html {
   text-align: center;
-  background-color: black;
-  max-width: 100vw;
-  cursor: url("../assets/remote-control.png");
+  max-width: 100%;
+  cursor: url("../assets/remote-control.png"), pointer;
   z-index: 1;
 }
-.body {
-  background: black !important;
-}
+
+body {
+  background: linear-gradient(10deg, rgb(124, 92, 92) 0%, black 100%);
+  width: 100vw;
+  height: 100vw;
+  padding-bottom: 100px;
+} 
+
 .logo-long-header {
   float: inline-start;
 }
@@ -34,17 +38,22 @@
 .menu-item:hover {
   font-size: 2rem;
 }
-
+.index-main a {
+  color: white;
+  text-decoration: none;
+  height: 100vh;
+}
 .menu-item {
   font-family: "Mulish";
   color: white;
 }
 p, h1, h2, h3, h4, h5  {
   color: white;
+  text-decoration: none;
 }
 
 .link {
-  color: white;
+  color: black;
 }
 
 @font-face {
@@ -63,15 +72,28 @@ h5 {
 }
 .box-title {
     font-family: "Mulish";
-    color: white !important;
-    position: relative;
+    background-image: url("https://media.giphy.com/media/FkUyGd7FDh1gk/giphy.gif");
+    background-size: cover;
+    color: transparent;
+    -moz-background-clip: text;
+    -webkit-background-clip: text;
+    background-clip: text;
+    text-transform: uppercase;
+    font-size: 120px;
+    margin: 10px 0;
 }
-.box-title-under {
+.title {
   font-family: "Mulish";
-  color: white !important;
-  position: absolute;
+  text-align: center;
+  color: rgb(255, 255, 255);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  letter-spacing: 1px;
+  line-height: 2;
 }
-
 .logo {
     border-radius: 50px;
     padding: 20px;
@@ -83,42 +105,6 @@ h5 {
   }
 }
 
-.index-main {
-    max-width: 100vw;
-    position: relative;
-    padding-top: 50px;
-    justify-content: center;
-    display: grid;
-    grid-column-gap: 20px;
-    grid-row-gap: 50px;
-    grid-template-columns: repeat(3, 400px);
-    grid-template-rows: auto;
-    grid-template-areas:
-    "tv1 tv2 tv3" ;
-    z-index: 1;
-    align-items: center;
-    align-content: center;
-}
-
-@media screen and (max-width: 1250px) {
-  .index-main {
-    grid-column-gap: 50px;
-    grid-template-columns: repeat(2, 400px);
-    grid-template-areas: 
-    "tv1 tv2"
-    "tv3 tv3";
-  }
-}
-  
-@media screen and (max-width: 870px){
-  .index-main {
-    grid-template-columns: 400px;
-    grid-template-areas: 
-    "tv1"
-    "tv2"
-    "tv3"
-  }
-}
   /******************************/
   
   .tv0 {
@@ -132,76 +118,7 @@ h5 {
     z-index: 1;
   }
 
-  .tv00 {
-    width: 100%;
-    height: 100px;
-    border: none;
-    margin: 0 auto;
-    overflow: hidden;
-    position: relative;
-    z-index: 1;
-    margin-bottom: 20px;
-  }
-  
-  .tv-static0 {
-    position: relative;
-    top: 0px;
-    left: 0px;
-    margin: auto;
-    height: 300%;
-    width: 300%;
-    animation: anim 1s steps(2, end) infinite both;
-    transform: translate3d(0, 0, 0);
-    filter: contrast(300%) brightness(50%);
-    z-index: 1;
-    justify-items: none;
-  }
-  
-  .tv-static0 svg {
-    height: 200%;
-    width: 100%;
-    transform: scale(2.5);
-    position: fixed;
-    z-index: 1;
-  }
 
-  
-  @keyframes anim {
-    0% {
-      transform: translateX(0px, 0px);
-    }
-    10% {
-      transform: translate(-100px, 100px);
-    }
-    20% {
-      transform: translate(150px, -100px);
-    }
-    30% {
-      transform: translate(-100px, 100px);
-    }
-    40% {
-      transform: translate(100px, -150px);
-    }
-    50% {
-      transform: translate(-100px, 200px);
-    }
-    60% {
-      transform: translate(-200px, -100px);
-    }
-    70% {
-      transform: translateY(50px, 100px);
-    }
-    80% {
-      transform: translate(100px, -150px);
-    }
-    90% {
-      transform: translate(0px, 200px);
-    }
-    100% {
-      transform: translate(-100px, 100px);
-    }
-  }
- 
 /*****************/
 
 .nav-item {
@@ -209,25 +126,4 @@ h5 {
     text-decoration: none;
     font-size: 2rem;
     font-family: "Mulish";
-}
-
-.tv1 {
-  grid-area: tv1;
-  z-index: 1;
-  align-content: center;
-}
-
-.tv2 {
-  grid-area: tv2;
-  z-index: 1;
-}
-
-.tv3 {
-  grid-area: tv3;
-  z-index: 1;
-}
-
-rect {
-  -webkit-filter: url(#noiseFilter);
-  filter: url(#noiseFilter);
 }

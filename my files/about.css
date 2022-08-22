@@ -1,0 +1,39 @@
+.about-the-author {
+    display: grid;
+    grid-gap: 120px;
+    grid-template-columns: repeat(3, 300px);
+    grid-template-rows: auto;
+    grid-template-areas: 
+    "title title title"
+    "links photo slideshow"
+    "social     text   slideshow";
+}
+
+.author-image {
+    grid-area: "photo";
+}
+
+.author-social {
+    grid-area: "links";
+}
+
+.text {
+    grid-area: "text";
+}
+
+.slideshow {
+    grid-area: "slideshow"
+}
+
+.author-title {
+    grid-area: "title";
+}
+
+@font-face {
+    font-family: "Mulish" ;
+    src: url("../fonts/Mulish-Black.ttf");
+}
+
+.body-title {
+    font-family: "Mulish";
+}
