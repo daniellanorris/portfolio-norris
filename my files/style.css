@@ -1,6 +1,5 @@
 html {
   text-align: center;
-  max-width: 100%;
   cursor: url("../assets/remote-control.png"), pointer;
   z-index: 1;
 }
@@ -8,9 +7,17 @@ html {
 body {
   background: linear-gradient(10deg, rgb(124, 92, 92) 0%, black 100%);
   width: 100vw;
-  height: 100vw;
+  height: 100vh;
   padding-bottom: 100px;
 } 
+
+.index-body {
+  height: 100vh;
+}
+.index-main {
+  padding-top: 50px;
+}
+
 
 .logo-long-header {
   float: inline-start;
@@ -22,9 +29,7 @@ body {
 .black {
   color: black;
 }
-.title-bar {
-  background-color: darkgrey !important;
-}
+
 
 .align-center {
   align-self: center;
@@ -35,9 +40,10 @@ body {
   font: white;
 }
 
-.menu-item:hover {
-  font-size: 2rem;
+.box-title:hover {
+  animation: "zoom" 10s;
 }
+
 .index-main a {
   color: white;
   text-decoration: none;
@@ -81,49 +87,29 @@ h5 {
     text-transform: uppercase;
     font-size: 120px;
     margin: 10px 0;
+    padding-bottom: 50px;
 }
-.title {
-  font-family: "Mulish";
-  text-align: center;
-  color: rgb(255, 255, 255);
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  height: 100vh;
-  letter-spacing: 1px;
-  line-height: 2;
-}
+
 .logo {
     border-radius: 50px;
     padding: 20px;
 }
-
-@media screen and (min-width: 1023px) {
-  .logo-small-screen {
-    display: none;
-  }
-}
-
-  /******************************/
-  
-  .tv0 {
-    width: 400px;
-    height: 200px;
-    border: none;
-    margin: 0 auto;
-    overflow: hidden;
-    position: relative;
-    border-radius: 45px;
-    z-index: 1;
-  }
-
-
-/*****************/
 
 .nav-item {
     color: white;
     text-decoration: none;
     font-size: 2rem;
     font-family: "Mulish";
+}
+
+/****************/
+/* MEDIA QUERIES */
+
+@media screen and (max-width: 969px) {
+  .box-title {
+    font-size: 80px;
+  }
+.index-body {
+  height: 100vh;
+}
 }
