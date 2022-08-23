@@ -1,14 +1,10 @@
 html {
   text-align: center;
-  cursor: url(../assets/remote-control.png), pointer;
+  cursor: url("../assets/remote-control.png"), pointer;
   height: 100%;
 }
-a {
-  z-index: 2;
-}
-nav {
-  z-index: 10;
-}
+
+
 body, .portfolio-main {
   height: 100%;
   padding-bottom: 100px;
@@ -17,11 +13,13 @@ body, .portfolio-main {
   background-attachment: fixed;
   background: linear-gradient(10deg, rgb(124, 92, 92) 0%, black 100%) fixed;
 } 
-div#my-info.off-canvas.position-left.reveal-for-large {
-  height: 100vh;
+div#my-info.off-canvas.position-left {
+  height: 20px;
+  border: black 10px ;
   background-color: black;
-  box-shadow: 0 100px 200px 90px black;
+  box-shadow: -10px 20px 100px 100px black;
 }
+ 
 .text-center > .thumbnail {
   border: none;
   padding-bottom: 85px;
@@ -76,10 +74,6 @@ p, h2, h3, h4, h5  {
   text-decoration: none;
 }
 
-.link {
-  color: black;
-}
-
 @font-face {
     font-family:"Mulish";
     src: url("../fonts/Mulish-Black.ttf");
@@ -120,6 +114,10 @@ h2, h3, h4, h5 {
     font-family: "Mulish";
 }
 
+.sidebar {
+  float: left;
+}
+
 /****************/
 /* MEDIA QUERIES */
 @media screen and (min-width: 1673px) {
@@ -139,9 +137,7 @@ h2, h3, h4, h5 {
   justify-items: center;
   justify-self: center;
 }
-.sidebar {
-  display: none;
-}
+
 .off-canvas-content, div.row.column  {
   margin-left: 0px;
   width: 100%;
