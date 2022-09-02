@@ -31,7 +31,10 @@ section {
     margin-bottom: 100px;
 
 }
-.box-title {
+.row.column {
+    z-index: -2;
+}
+h1.box-title {
     font-family: "Mulish";
     background-image: url("https://media.giphy.com/media/FkUyGd7FDh1gk/giphy.gif");
     background-size: 400px;
@@ -42,7 +45,7 @@ section {
     text-transform: uppercase;
     font-size: 100px;
     margin: 0 auto;
-    z-index: -1;
+    z-index: -2;
 }
 .body-title, h1, h2, h3, h5 {
     color: white;
@@ -79,8 +82,11 @@ footer {
 ul {
     justify-content: center;
     text-align: center;
+    z-index: 2;
 }
-
+h1 {
+    z-index: -2;
+}
 h4 {
     color: black !important;
 }
@@ -130,6 +136,147 @@ h4 {
     src: url("../fonts/Mulish-Black.ttf");
 }
 
+.top-nav {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    background: black;
+    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    color: #FFF;
+    height: 50px;
+    padding: 1em;
+    z-index: 2;
+  }
+  
+  .menu1 {
+    display: flex;
+    flex-direction: row;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    font-family: "Mulish";
+    text-decoration: none;
+    color: white !important;
+    z-index: 100;
+  }
+  
+  .menu1 > li {
+    margin: 0 1rem;
+    overflow: hidden;
+    color: white;
+    z-index: 100;
+  }
+ a {
+     color: white;
+     text-decoration: none;
+ } 
+  .menu-button-container {
+    display: none;
+    height: 100%;
+    width: 30px;
+    cursor: pointer;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    z-index: 100;
+  }
+  @media screen and (min-width: 700px) {
+  .menu-button-container {
+    background: black
+  }
+  }
+  
+  #menu-toggle {
+    display: none;
+  }
+  
+  .menu-button,
+  .menu-button::before,
+  .menu-button::after {
+    display: block;
+    background-color: #fff;
+    position: absolute;
+    height: 4px;
+    width: 30px;
+    transition: transform 400ms cubic-bezier(0.23, 1, 0.32, 1);
+    border-radius: 2px;
+    z-index: 3;
+  }
+  
+  .menu-button::before {
+    content: '';
+    margin-top: -8px;
+    z-index: 3;
+  }
+  
+  .menu-button::after {
+    content: '';
+    margin-top: 8px;
+    z-index: 2;
+  }
+  
+  #menu-toggle:checked + .menu-button-container .menu-button::before {
+    margin-top: 0px;
+    transform: rotate(405deg);
+    z-index: 3;
+  }
+  
+  #menu-toggle:checked + .menu-button-container .menu-button {
+    background: rgba(255, 255, 255, 0);
+    z-index: 3;
+  }
+  
+  #menu-toggle:checked + .menu-button-container .menu-button::after {
+    margin-top: 0px;
+    transform: rotate(-405deg);
+    z-index: 3;
+  }
+  
+  @media (max-width: 700px) {
+    .menu-button-container {
+      display: flex;
+      z-index: 3;
+    }
+    .menu1 {
+      position: absolute;
+      top: 0;
+      margin-bottom: 1050px;
+      left: 0;
+      flex-direction: column;
+      width: 100%;
+      justify-content: center;
+      align-items: center;
+    }
+    #menu-toggle ~ .menu1  li {
+      height: 0;
+      margin: 0;
+      padding: 0;
+      border: 0;
+      transition: height 400ms cubic-bezier(0.23, 1, 0.32, 1);
+      z-index: 2;
+    }
+    #menu-toggle:checked ~ .menu1  li {
+      border: 1px solid #333;
+      height: 2.5em;
+      padding: 0.5em;
+      transition: height 400ms cubic-bezier(0.23, 1, 0.32, 1);
+      z-index: 2;
+    }
+    .menu1 > li {
+      display: flex;
+      justify-content: center;
+      margin: 0;
+      padding: 0.5em 0;
+      width: 100%;
+      color: white;
+      background-color: #222;
+    }
+    .menu1 > li:not(:last-child) {
+      border-bottom: 1px solid #444;
+    }
+  }
+  
 /**** MEDIA QUERIES ****/
 
 @media screen and (min-width: 1700px) {
@@ -201,6 +348,10 @@ h4 {
     }
     .author-social {
         width: 300px;
+        height: 1500px;
+    }
+    .linkedin {
+        height: 600px;
     }
     .author-image > img {
         width: 300px !important;
