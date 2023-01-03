@@ -10,16 +10,19 @@
     <link rel="stylesheet" href="portfolio.html">
     <link rel="stylesheet" href="interview.html">
     <link rel="stylesheet" href="case-studies.html">
-
+    <script src="../libraries/p5.min.js"></script>
+    <script src="../libraries/p5.sound.min.js"></script>
   </head>
   <body class="flex-container">
     <main>
+        <script class="animation-canvas" src="sketch.js"></script>
         <span class="little-dot" id="portfolio"><h2> portfolio</h2> <a href="portfolio.html"></a></span>
         <span class="dot" id="bio"><h2>bio</h2> <a href="bio.html"></a></span>
-        <img src="../assets/logo.png" width="400" class="rounded-corners" id="logo">
+        <span class="container-card">
+            <img src="logo.png" class="rounded-corners" id="logo">
+        </span>
         <span class="little-dot" id="interview"><h2> interview</h2><a href="interview.html"></a></span>
-        <span class= "dot" id="case-studies"><h2>case studies</h2><a href="case-studies.html"></a></span>
-        
-	<script src="index.js"></script>
+        <span class= "dot" id="case-studies"><h2>case studies</h2><a href="case-studies.html"></a></span> 
+
   </body>
 </html>
