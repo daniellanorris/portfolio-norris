@@ -1,0 +1,81 @@
+html {
+  background-color: rgb(112, 135, 112);
+  color:white;
+  font: 12px;
+  font-family: "../fonts/Futura.ttc", Futura, sans-serif;
+}
+
+main {
+  align-content: center;
+  margin: auto;
+  padding-top: 100px;
+  vertical-align: center;
+
+}
+h2 {
+  padding: 20px;
+  color:  white;
+}
+.flex-container {
+  display: flex;
+}
+.dot {
+  height: 150px;
+  width: 150px;
+  background-color: black;
+  border-radius: 50%;
+  display: inline-flex;
+  transition: transform 1s ease-in-out;
+  margin: 10px;
+  z-index: 1;
+}
+
+.little-dot {
+  height: 200px;
+  width: 200px;
+  background-color: black;
+  border-radius: 50%;
+  display: inline-flex;
+  transition: transform 1s ease-in-out;
+  margin: 10px;
+  z-index: 1;
+}
+.little-dot:hover, .dot:hover {
+  transform: scale(1.2);
+}
+
+.rounded-corners {
+  border-radius: 50px;
+}
+
+#logo {
+  z-index: 1;
+  display: flex;
+  align-self: center;
+  padding: 20px;
+  position: absolute;
+  width: 400px;
+  transition: transform 3s;
+}
+
+.container-card {
+  position: relative;
+  transform-style: preserve-3d;
+  transition: transform 3s;
+  width: 400px;
+}
+
+#logo:hover{
+  transform: rotateY(180deg)
+  
+}
+
+#animation-canvas {
+  z-index: 50;
+  display: flex;
+  align-self: center;
+  position: absolute;
+
+
+}
+
