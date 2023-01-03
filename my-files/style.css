@@ -1,317 +1,58 @@
 html {
-  text-align: center;
-  cursor: url("../assets/remote-control.png"), pointer;
-  height: 100%;
-}
-
-
-body, .portfolio-main {
-  height: 100%;
-  margin: 0;
-  background-repeat: no-repeat;
-  background-attachment: fixed;
-  background: linear-gradient(10deg, rgb(124, 92, 92) 0%, black 100%) fixed;
-} 
-div#my-info.off-canvas.position-left {
-  height: 20px;
-  border: black 10px ;
-  background-color: black;
-  box-shadow: -10px 20px 100px 100px black;
-}
- 
-.text-center > .thumbnail {
-  border: none;
-  padding-bottom: 85px;
-}
-
-.index-body {
-  height: 100vh;
-}
-.index-main {
-  padding-top: 50px;
-}
-
-.logo-long-header {
-  float: inline-start;
-}
-.off-canvas-content{
-  background-color: black !important;
-
-}
-
-.black {
-  color: black;
-}
-
-.row { 
-  height: 100%;
-}
-.align-center {
-  align-self: center;
-}
-div.medium-6.columns {
-  display: block;
-  justify-content: center;
-}
-.h1-long-header {
-  float: inline-end;
-  font: white;
-}
-
-.box-title:hover {
-  animation: "zoom" 10s;
-}
-
-
-.index-main a {
-  color: white !important;
-  text-decoration: none;
-  height: 100vh;
-}
-.menu-item {
-  font-family: "Mulish";
+  background-color: rgb(112, 135, 112);
   color: white;
-}
-p, h2, h3, h4, h5, a  {
-  color: white !important;
-  text-decoration: none;
+  font: 12px;
 }
 
-@font-face {
-    font-family:"Mulish";
-    src: url("../fonts/Mulish-Black.ttf");
-}
-h1, .h1 {
-  font-size: 3rem;
-  position: relative;
-  color: white;
-  font-family: "Mulish";
-}
-
-h2, h3, h4, h5, li, a {
-  font-family: "Mulish"
-}
-.box-title {
-    font-family: "Mulish";
-    background-image: url("https://media.giphy.com/media/FkUyGd7FDh1gk/giphy.gif");
-    background-size: cover;
-    color: transparent;
-    -moz-background-clip: text;
-    -webkit-background-clip: text;
-    background-clip: text;
-    text-transform: uppercase;
-    font-size: 120px;
-    margin: 10px 0;
-    padding-bottom: 50px;
-}
-
-.logo {
-    border-radius: 50px;
-    padding: 20px;
-}
-
-.nav-item {
-    color: white;
-    text-decoration: none;
-    font-size: 2rem;
-    font-family: "Mulish";
-}
-
-.sidebar {
-  float: left;
-}
-
-.footer {
-  margin-top: 100px;
-  padding: 20px 0;
-  position: relative;
-  background-color: black;
-}
-
-p {
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-}
-
-h2 {
+main {
+  align-content: center;
+  margin: auto;
+  padding-top: 200px;
   vertical-align: center;
-  text-align: center;
+
 }
-ul.menu {
+h2 {
+  padding: 20px;
+}
+.flex-container {
+  display: flex;
+}
+.dot {
+  height: 150px;
+  width: 150px;
+  background-color: black;
+  border-radius: 50%;
   display: inline-flex;
-  justify-items: center;
-}
-html, body {
-  margin: 0;
-  height: 100%;
+  transition: transform 1s ease-in-out;
+  margin: 10px
 }
 
-* {
-  font-family: "Raleway";
-  box-sizing: border-box;
+.little-dot {
+  height: 200px;
+  width: 200px;
+  background-color: black;
+  border-radius: 50%;
+  display: inline-flex;
+  transition: transform 1s ease-in-out;
+  margin: 10px;
+}
+.little-dot:hover, .dot:hover {
+  transform: scale(1.2);
 }
 
-.top-nav2 {
+.rounded-corners {
+  border-radius: 50px;
+}
+
+#logo {
   display: flex;
-  flex-direction: row;
-  align-items: center;
-  justify-content: space-between;
-  background: black;
-  /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-  color: #FFF;
-  height: 50px;
-  padding: 1em;
+  transition: 1s;
+  vertical-align: center;
+  align-self: center;
+  padding: 20px;
+
+}
+#logo:hover {
+  transform: scale(1.1);
 }
 
-.menu2 {
-  display: flex;
-  flex-direction: row;
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
-}
-
-.menu2 > li {
-  margin: 0 1rem;
-  overflow: hidden;
-}
-
-.menu-button-container2 {
-  display: none;
-  height: 100%;
-  width: 30px;
-  cursor: pointer;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-}
-@media screen and (min-width: 700px) {
-.menu-button-container2, .menu-button2, .menu-button2::before, .menu-button2::after, #menu-toggle {
-  display: none !important;
-}
-}
-
-#menu-toggle2 {
-  display: none;
-}
-
-.menu-button2,
-.menu-button2::before,
-.menu-button2::after {
-  display: block;
-  background-color: #fff;
-  position: absolute;
-  height: 4px;
-  width: 30px;
-  transition: transform 400ms cubic-bezier(0.23, 1, 0.32, 1);
-  border-radius: 2px;
-}
-
-.menu-button2::before {
-  content: '';
-  margin-top: -8px;
-}
-
-.menu-button2::after {
-  content: '';
-  margin-top: 8px;
-}
-
-#menu-toggle2:checked + .menu-button-container2 .menu-button2::before {
-  margin-top: 0px;
-  transform: rotate(405deg);
-}
-
-#menu-toggle2:checked + .menu-button-container2 .menu-button2 {
-  background: rgba(255, 255, 255, 0);
-}
-
-#menu-toggle2:checked + .menu-button-container2 .menu-button2::after {
-  margin-top: 0px;
-  transform: rotate(-405deg);
-}
-
-@media (max-width: 700px) {
-  .menu-button-container2 {
-    display: flex;
-  }
-  .menu2 {
-    position: absolute;
-    top: 0;
-    margin-top: 50px;
-    left: 0;
-    flex-direction: column;
-    width: 100%;
-    justify-content: center;
-    align-items: center;
-  }
-  #menu-toggle2 ~ .menu2  li {
-    height: 0;
-    margin: 0;
-    padding: 0;
-    border: 0;
-    transition: height 400ms cubic-bezier(0.23, 1, 0.32, 1);
-  }
-  #menu-toggle2:checked ~ .menu2  li {
-    border: 1px solid #333;
-    height: 2.5em;
-    padding: 0.5em;
-    transition: height 400ms cubic-bezier(0.23, 1, 0.32, 1);
-  }
-  .menu2> li {
-    display: flex;
-    justify-content: center;
-    margin: 0;
-    padding: 0.5em 0;
-    width: 100%;
-    color: white;
-    background-color: #222;
-  }
-  .menu2 > li:not(:last-child) {
-    border-bottom: 1px solid #444;
-  }
-}
-
-/****************/
-/* MEDIA QUERIES */
-@media screen and (min-width: 1673px) {
-  .title-bar {
-    display: none;
-  }
-}
-@media screen and (max-width: 1673px) {
-  #my-info.off-canvas.position-left.reveal-for-large {
-    max-height: 238px;
-}
-.row.small-up-2.medium-up-3.large-up-4.porfolio-main {
-  display: inline;
-  padding: 0px;
-  margin: 0px !important;
-  justify-content: center;
-  justify-items: center;
-  justify-self: center;
-}
-
-.off-canvas-content, div.row.column  {
-  margin-left: 0px;
-  width: 100%;
-  z-index: 1;
-}
-}
-@media screen and (max-width: 1415px) {
-  .box-title {
-    float: center;
-  }
-}
-@media screen and (max-width: 1200px) {
-  .box-title {
-    font-size: 80px;
-  }
-.index-body {
-  height: 100vh;
-}
-}
-@media screen and (max-width: 492px) {
-  .box-title {
-    font-size: 60px;
-  }
-}
