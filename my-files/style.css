@@ -27,14 +27,19 @@ div#my-info.off-canvas.position-left {
 
 .index-body {
   height: 100vh;
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  flex-direction: column;
 }
 .index-main {
   padding-top: 50px;
+  justify-content: center;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
 }
 
-.logo-long-header {
-  float: inline-start;
-}
 .off-canvas-content{
   background-color: black !important;
 
@@ -50,7 +55,11 @@ div#my-info.off-canvas.position-left {
 .align-center {
   align-self: center;
 }
+.box-title {
+  justify-self: center;
+  float: right;
 
+}
 .h1-long-header {
   float: inline-end;
   font: white;
@@ -64,6 +73,7 @@ div#my-info.off-canvas.position-left {
   color: white;
   text-decoration: none;
   height: 100vh;
+
 }
 .menu-item {
   font-family: "Mulish";
